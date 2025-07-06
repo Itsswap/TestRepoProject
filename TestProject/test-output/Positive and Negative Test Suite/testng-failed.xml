@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Positive and Negative Test Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="utilities.ExtentReportManager"/>
+  </listeners>
+  <test thread-count="5" name="PositiveNegativeTests(failed)">
+    <groups>
+      <run>
+        <include name="positive"/>
+        <include name="negative"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="testcases.LoginPageTest">
+        <methods>
+          <include name="Verify_loginWithEmptyPassword"/>
+          <include name="Verify_userLoginSuccess" invocation-numbers="0"/>
+          <include name="Verify_loginWithEmptyUsername"/>
+          <include name="Verify_loginWithIncorrectUsernameCorrectPassword"/>
+          <include name="Verify_loginWithEmptyUsernameAndPassword"/>
+          <include name="Verify_loginWithCorrectUsernameIncorrectPassword"/>
+        </methods>
+      </class> <!-- testcases.LoginPageTest -->
+    </classes>
+  </test> <!-- PositiveNegativeTests(failed) -->
+</suite> <!-- Failed suite [Positive and Negative Test Suite] -->
