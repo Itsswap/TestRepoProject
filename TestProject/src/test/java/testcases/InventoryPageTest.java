@@ -54,7 +54,7 @@ public class InventoryPageTest extends MasterPage {
 	@Test
 	public void verify_SortingByPriceLowToHigh() {
 		String visibleText = "Price (low to high)";
-		ip.selectSortOption(By.className("product_sort_container"), visibleText);
+		ip.selectPriceOption(By.className("product_sort_container"), visibleText);
 		List<Double> prices = ip.getProductPrices();
 
 		List<Double> expected = prices.stream().sorted().collect(Collectors.toList());
@@ -65,7 +65,7 @@ public class InventoryPageTest extends MasterPage {
 	@Test
 	public void verify_SortingByPriceHighToLow() {
 		String visibleText = "Price (high to low)";
-		ip.selectSortOption(By.className("product_sort_container"), visibleText);
+		ip.selectPriceOption(By.className("product_sort_container"), visibleText);
 		List<Double> prices = ip.getProductPrices();
 
 		List<Double> expected = prices.stream()
