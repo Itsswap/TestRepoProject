@@ -13,6 +13,7 @@ public class InventoryPage extends CommonMethods {
 	}
 
 	By sortDropdown = By.className("product_sort_container");
+	By priceDropdown = By.className("product_sort_container");
 	By productNames = By.className("inventory_item_name");
 	By productPrices = By.className("inventory_item_price");
 	By cartBadge = By.className("shopping_cart_badge");
@@ -20,7 +21,10 @@ public class InventoryPage extends CommonMethods {
 	public void selectSortOption(By locatorKey, String visibleText) {
 		selectDropdownByVisibleText(sortDropdown, visibleText);
 	}
-
+	
+	public void selectPriceOption(By locatorKey, String visibleText) {
+		selectDropdownByVisibleText(priceDropdown, visibleText);
+	}
 	public List<String> getProductNames() {
 		return driver.findElements(productNames)
 		             .stream()
