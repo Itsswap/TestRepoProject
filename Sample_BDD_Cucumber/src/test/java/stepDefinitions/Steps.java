@@ -4,6 +4,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 import io.cucumber.java.en.*;
+import io.github.bonigarcia.wdm.WebDriverManager;
 import junit.framework.Assert;
 import pageObjects.LoginPage;
 
@@ -14,7 +15,8 @@ public class Steps {
 
 	@Given("User Launch Chrome browser")
 	public void user_launch_chrome_browser() {
-		System.setProperty("webdriver.chrome.driver", System.getProperty("C:\\Users\\shiv\\Desktop\\Workspace\\Sample_BDD_Cucumber.\\Driver\\chromedriver.exe"));
+		//System.setProperty("webdriver.chrome.driver", System.getProperty("C:\\Users\\shiv\\Desktop\\Workspace\\Sample_BDD_Cucumber.\\Driver\\chromedriver.exe"));
+		WebDriverManager.chromedriver().setup();
 		driver = new ChromeDriver();
 		lp = new LoginPage(driver);
 	}
