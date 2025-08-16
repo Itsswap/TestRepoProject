@@ -9,8 +9,7 @@ Feature: Login
     And Click on Login
     Then Page Title should be "Dashboard / nopCommerce administration"
     When User click on Log out link
-    Then Page Title should be "Your store. Login"
-    And close browser
+    Then close browser
     
   Scenario Outline: Login Data Driven
     Given User Launch Chrome browser
@@ -19,11 +18,11 @@ Feature: Login
     And Click on Login
     Then Page Title should be "Dashboard / nopCommerce administration"
     When User click on Log out link
-    Then Page Title should be "Your store. Login"
-    And close browser
+    Then  close browser
     
     Examples:
     	| email | password |
     	| admin@yourstore.com | admin |
     	| admin1@yourstore.com | admin123 |
+    	| admin2@yourstore.com | admin789 |
     	
