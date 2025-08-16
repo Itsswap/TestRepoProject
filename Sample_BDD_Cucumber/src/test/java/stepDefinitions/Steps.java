@@ -5,7 +5,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 import io.cucumber.java.en.*;
 import io.github.bonigarcia.wdm.WebDriverManager;
-import junit.framework.Assert;
+import org.junit.Assert;
 import pageObjects.LoginPage;
 
 public class Steps {
@@ -40,10 +40,10 @@ public class Steps {
 	@Then("Page Title should be {string}")
 	public void page_title_should_be(String title) {
 		if(driver.getPageSource().contains("Login was unsuccessful.")) {
-			driver.close();
-			Assert.assertTrue(true);
-		}else {
-			Assert.assertEquals(title, driver.getTitle());
+		    driver.quit();
+		    Assert.fail("Login was unsuccessful");
+		} else {
+		    Assert.assertEquals(title, driver.getTitle());
 		}
 	}
 

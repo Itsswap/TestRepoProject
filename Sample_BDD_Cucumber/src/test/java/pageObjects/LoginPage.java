@@ -1,17 +1,22 @@
 package pageObjects;
 
+import java.time.Duration;
+
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class LoginPage {
 
-	public WebDriver ldriver;
+	public static WebDriver lpdriver;
 
 	public LoginPage(WebDriver rdriver) {
-		ldriver = rdriver;
+		lpdriver = rdriver;
 		PageFactory.initElements(rdriver, this);
 	}
 
@@ -23,7 +28,7 @@ public class LoginPage {
 	@CacheLookup
 	WebElement txtPassword;
 
-	@FindBy(xpath = "//input[@value='Log in']")
+	@FindBy(xpath = "//button[@class='button-1 login-button']")
 	@CacheLookup
 	WebElement btnLogin;
 
@@ -37,8 +42,8 @@ public class LoginPage {
 	}
 
 	public void setUserPassword(String uspwd) {
-		txtEmail.clear();
-		txtEmail.sendKeys(uspwd);
+		txtPassword.clear();
+		txtPassword.sendKeys(uspwd);
 	}
 
 	public void clickLogin() {
@@ -46,6 +51,9 @@ public class LoginPage {
 	}
 
 	public void clickLogout() {
-		lnkLogout.click();
+		WebDriverWait wait = new WebDriverWait(lpdriver, Duration.ofSeconds(10));
+		wait.until(ExpectedConditions.invisibilityOfElementLocated(By.id("ajaxBusy")));
+		lpdriver.findElement(By.linkText("Logout")).click();
+		//lnkLogout.click();
 	}
 }
