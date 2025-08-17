@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-08-17T19:09:56 IST" name="Suite" finished-at="2025-08-17T19:10:11 IST" duration-ms="15540">
+    <groups>
+      <group name="negative">
+        <method signature="LoginPageTest.Verify_loginWithCorrectUsernameIncorrectPassword()[pri:1, instance:testcases.LoginPageTest@2d1ef81a]" name="Verify_loginWithCorrectUsernameIncorrectPassword" class="testcases.LoginPageTest"/>
+        <method signature="LoginPageTest.Verify_loginWithIncorrectUsernameCorrectPassword()[pri:2, instance:testcases.LoginPageTest@2d1ef81a]" name="Verify_loginWithIncorrectUsernameCorrectPassword" class="testcases.LoginPageTest"/>
+        <method signature="LoginPageTest.Verify_loginWithEmptyUsername()[pri:3, instance:testcases.LoginPageTest@2d1ef81a]" name="Verify_loginWithEmptyUsername" class="testcases.LoginPageTest"/>
+        <method signature="LoginPageTest.Verify_loginWithEmptyPassword()[pri:4, instance:testcases.LoginPageTest@2d1ef81a]" name="Verify_loginWithEmptyPassword" class="testcases.LoginPageTest"/>
+        <method signature="LoginPageTest.Verify_loginWithEmptyUsernameAndPassword()[pri:5, instance:testcases.LoginPageTest@2d1ef81a]" name="Verify_loginWithEmptyUsernameAndPassword" class="testcases.LoginPageTest"/>
+      </group> <!-- negative -->
+      <group name="sanity">
+        <method signature="LoginPageTest.Verify_userLoginSuccess(java.lang.String,java.lang.String)[pri:0, instance:testcases.LoginPageTest@2d1ef81a]" name="Verify_userLoginSuccess" class="testcases.LoginPageTest"/>
+      </group> <!-- sanity -->
+      <group name="positive">
+        <method signature="LoginPageTest.Verify_userLoginSuccess(java.lang.String,java.lang.String)[pri:0, instance:testcases.LoginPageTest@2d1ef81a]" name="Verify_userLoginSuccess" class="testcases.LoginPageTest"/>
+      </group> <!-- positive -->
+    </groups>
+    <test started-at="2025-08-17T19:09:56 IST" name="Test" finished-at="2025-08-17T19:10:11 IST" duration-ms="15540">
+      <class name="testcases.LoginPageTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.LoginPageTest@2d1ef81a]" started-at="2025-08-17T19:09:57 IST" name="setUp" finished-at="2025-08-17T19:10:00 IST" duration-ms="2920" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="Verify_userLoginSuccess(java.lang.String,java.lang.String)[pri:0, instance:testcases.LoginPageTest@2d1ef81a]" started-at="2025-08-17T19:10:00 IST" name="Verify_userLoginSuccess" data-provider="loginData" finished-at="2025-08-17T19:10:01 IST" duration-ms="919" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[standard_user]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[secret_sauce]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_userLoginSuccess -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.LoginPageTest@2d1ef81a]" started-at="2025-08-17T19:10:01 IST" name="tearDown" finished-at="2025-08-17T19:10:01 IST" duration-ms="212" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.LoginPageTest@2d1ef81a]" started-at="2025-08-17T19:10:01 IST" name="setUp" finished-at="2025-08-17T19:10:02 IST" duration-ms="1143" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="Verify_loginWithCorrectUsernameIncorrectPassword()[pri:1, instance:testcases.LoginPageTest@2d1ef81a]" started-at="2025-08-17T19:10:02 IST" name="Verify_loginWithCorrectUsernameIncorrectPassword" finished-at="2025-08-17T19:10:03 IST" duration-ms="308" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_loginWithCorrectUsernameIncorrectPassword -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.LoginPageTest@2d1ef81a]" started-at="2025-08-17T19:10:03 IST" name="tearDown" finished-at="2025-08-17T19:10:03 IST" duration-ms="162" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.LoginPageTest@2d1ef81a]" started-at="2025-08-17T19:10:03 IST" name="setUp" finished-at="2025-08-17T19:10:05 IST" duration-ms="2166" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="Verify_loginWithIncorrectUsernameCorrectPassword()[pri:2, instance:testcases.LoginPageTest@2d1ef81a]" started-at="2025-08-17T19:10:05 IST" name="Verify_loginWithIncorrectUsernameCorrectPassword" finished-at="2025-08-17T19:10:05 IST" duration-ms="282" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_loginWithIncorrectUsernameCorrectPassword -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.LoginPageTest@2d1ef81a]" started-at="2025-08-17T19:10:05 IST" name="tearDown" finished-at="2025-08-17T19:10:06 IST" duration-ms="190" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.LoginPageTest@2d1ef81a]" started-at="2025-08-17T19:10:06 IST" name="setUp" finished-at="2025-08-17T19:10:07 IST" duration-ms="1138" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="Verify_loginWithEmptyUsername()[pri:3, instance:testcases.LoginPageTest@2d1ef81a]" started-at="2025-08-17T19:10:07 IST" name="Verify_loginWithEmptyUsername" finished-at="2025-08-17T19:10:07 IST" duration-ms="266" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_loginWithEmptyUsername -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.LoginPageTest@2d1ef81a]" started-at="2025-08-17T19:10:07 IST" name="tearDown" finished-at="2025-08-17T19:10:07 IST" duration-ms="194" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.LoginPageTest@2d1ef81a]" started-at="2025-08-17T19:10:07 IST" name="setUp" finished-at="2025-08-17T19:10:08 IST" duration-ms="1129" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="Verify_loginWithEmptyPassword()[pri:4, instance:testcases.LoginPageTest@2d1ef81a]" started-at="2025-08-17T19:10:08 IST" name="Verify_loginWithEmptyPassword" finished-at="2025-08-17T19:10:09 IST" duration-ms="263" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_loginWithEmptyPassword -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.LoginPageTest@2d1ef81a]" started-at="2025-08-17T19:10:09 IST" name="tearDown" finished-at="2025-08-17T19:10:09 IST" duration-ms="191" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.LoginPageTest@2d1ef81a]" started-at="2025-08-17T19:10:09 IST" name="setUp" finished-at="2025-08-17T19:10:11 IST" duration-ms="2123" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="Verify_loginWithEmptyUsernameAndPassword()[pri:5, instance:testcases.LoginPageTest@2d1ef81a]" started-at="2025-08-17T19:10:11 IST" name="Verify_loginWithEmptyUsernameAndPassword" finished-at="2025-08-17T19:10:11 IST" duration-ms="276" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_loginWithEmptyUsernameAndPassword -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.LoginPageTest@2d1ef81a]" started-at="2025-08-17T19:10:11 IST" name="tearDown" finished-at="2025-08-17T19:10:11 IST" duration-ms="195" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testcases.LoginPageTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

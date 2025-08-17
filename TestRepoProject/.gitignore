@@ -1,1 +1,20 @@
+# === Maven build ===
 /target/
+
+# === TestNG / Reports / Output ===
+/test-output/
+/reports/
+/screenshots/
+
+# === Eclipse / IDE specific ===
+/bin/
+/.settings/
+/.classpath
+/.project
+
+# === Logs ===
+*.log
+
+# === OS files ===
+.DS_Store
+Thumbs.db
